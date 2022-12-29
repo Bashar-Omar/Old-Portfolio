@@ -1,0 +1,82 @@
+/* Start Icon */
+.custom-icon {
+    position: relative;
+    display: flex;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 48px;
+    justify-content: center;
+    align-items: center;
+    color: #EFCD6A;
+    background: linear-gradient( to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50%);
+    box-shadow: -4px 8px 24px hsla(0, 0%, 0%, 0.125);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.custom-icon::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background: hsl(240, 2%, 13%);
+    border-radius: inherit;
+    z-index: -1;
+}
+
+.custom-icon i:hover {
+    transform: rotate(50deg);
+    transition: var(--main-transition);
+    color: white;
+}
+/* End Icon */
+
+.custom-link {
+    color: white;
+    transition: var(--main-transition);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.custom-link:hover {
+    color: var(--ait-color);
+    text-decoration: none;
+}
+
+
+.custome-title {
+    margin: 10px 0px 0px 25px;
+}
+
+.custome-title h1 {
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1.5em;
+    padding-bottom: 15px;
+    position: relative;
+    color: white;
+}
+
+.custome-title h1:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 55px;
+    background-color: #fff;
+}
+
+.custome-title h1:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    height: 1px;
+    width: 95%;
+    max-width: 255px;
+    background-color: #fff;
+}
